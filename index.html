@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saim Mustafa</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- ============= -->
+         <div class="navbar">
+
+            <img src="./images/logo.png" alt="logo" class="logo">
+            <div class="nav-items">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#Interest">Interest</a>
+                <a href="#work">Work</a>
+
+            </div>
+            <div class="nav-left">
+
+                <button class="contact-btn">Contact</button>
+                <div class="hamnav">
+                    <button class="contact-btn">Menu</button>
+                    <div class="hamnav-items">
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#Interest">Interest</a>
+                        <a href="#work">Work</a>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+        <!-- ==================? -->
+        <div class="hero">
+            <div class="hero-services">
+                <div class="left">
+                    <p>Computer Science Student</p>
+                    <p>Technology Enthusiast</p>
+                </div>
+                <div class="right">
+                    <p>Software Development</p>
+                    <p>Pakistan</p>
+
+                </div>
+            </div>
+            <div class="hero-heading">
+                <h1>Saim Mustafa</h1>
+            </div>
+        </div>
+        <!-- ====================== -->
+        <section class="about" id="about">
+            <div class="about-head">
+                <p>About</p>
+            </div>
+            <div class="about-content">
+                <p>Hi, I’m Saim Mustafa, a computer science student who enjoys learning how technology works and how software is built. 
+I spend my time exploring different areas of computing including programming, databases, and web technologies.</p>
+                <section class="tags">
+                    <p>100+</p>
+                    <p>Daily</p>
+                    <p>∞</p>
+                </section>
+                <section class="tags-text">
+                    <p>Hours of Learning</p>
+                    <p>Curiosity for Technology</p>
+                    <p>Passion for problem solving</p>
+
+                </section>
+            </div>
+            </section>
+        <!-- +++++++++++++++++++++++++++ -->
+        <section class="about" id="Interest">
+            <div class="about-head">
+                <p>Areas of Interest</p>
+            </div>
+            <div class="service-content">
+                <p><p>Areas of technology I am currently exploring and learning.</p>.</p>
+            </div>
+        </section>
+        </section>
+        <!-- ================= -->
+        <div class="table">
+            <div class="row1 border">
+                <p>Programming & Problem Solving</p>
+            </div>
+            <div class="row2 border">
+                <p>Web Technologies</p>
+
+            </div>
+            <div class="row3 border">
+                <p>Databases & SQL</p>
+            </div>
+            <div class="row4 border">
+                <p>
+                    Software Development Concepts
+                </p>
+            </div>
+        </div>
+        <!-- ======================== -->
+        <section class="work" id="work">
+            <div class="work-head">
+                <p>Work</p>
+            </div>
+            <div class="work-content">
+                <p>Here are some projects and experiments I’ve worked on while learning computer science and software development. 
+These projects help me understand programming concepts, improve my problem-solving skills, and apply what I learn in practice.
+
+                </p>
+            </div>
+        </section>
+        <!-- ============================ -->
+        <div class="projects-scroll">
+
+            <div class="projects">
+                <p>Projects</p>
+            </div>
+
+
+
+            <div class="pic1">
+
+            </div>
+            <div class="pic2">
+
+            </div>
+            <div class="pic3"></div>
+            <div class="pic4"></div>
+
+        </div>
+        <!-- =============================== -->
+
+
+        <div class="bottom">
+            <div class="footer">
+
+                <div class="col1">
+                    <p>
+                       A curious mind exploring technology, software development, and problem solving.
+                    </p>
+                </div>
+                <div class="col2">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#Interest">Interest</a>
+                    <a href="#work">Work</a>
+
+                </div>
+                <div class="col3">
+                    <a href="https://www.instagram.com/saimmmmx?igsh=aHQ2enM3YTgwbHN3&utm_source=qr" target="_blank"
+                        rel="noopener">Instagram</a>
+                    <a href="https://www.linkedin.com/in/saimmm?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank">Linkedin</a>
+                    <a href="mailto:saimmustafa754@gmail.com?subject=Portfolio%20Inquiry">Email Me</a>
+                </div>
+                <div class="col4">
+                    <p>Lahore, Pakistan</p>
+
+                </div>
+
+            </div>
+            <div class="bottom-heading">
+                <h1>Saim Mustafa</h1>
+            </div>
+        </div>
+        <!-- =========================== end -->
+
+
+
+    </div>
+
+    <!-- ==================SMOOTH SCROLL================ -->
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+
+    <script>
+        // Initialize Lenis
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothWheel: true
+        });
+
+        // Animation Loop
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    </script>
+</body>
+
+</html>
